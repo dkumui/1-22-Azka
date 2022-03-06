@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === 'Home' ) ? 'active' : '' }}" href="/">Home</a>
+          <a class="nav-link {{ ( $title === 'Beranda' ) ? 'active' : '' }}" href="/">Beranda</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ ( $title === 'About' ) ? 'active' : '' }}" href="/about">About</a>
@@ -17,6 +17,14 @@
         </li>
         <li class="nav-item">
           <a class="nav-link {{ ( $title === 'Contacts' ) ? 'active' : '' }}" href="/contacts">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="{{route ('login')}}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route ('register')}}">Register</a>
         </li>
       </ul>
     </div>
